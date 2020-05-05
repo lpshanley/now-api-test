@@ -1,13 +1,10 @@
 {
     "version": 2,
     "name": "now-api-test",
-    "functions": {
-        "scripts/now/ssr.js": {}
-    },
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "scripts/now/ssr.js"
+            "dest": "api/ssr.js"
         }
     ]
 }
