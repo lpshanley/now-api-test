@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "now-api-test",
+    "routes": [
+        {
+            "src": "./*",
+            "dest": "api/"
+        }
+    ]
+}
