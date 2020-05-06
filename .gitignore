@@ -2,4 +2,4 @@
 /public/build/
 /.now/
 .DS_Store
-/dist/
+/.dist/
