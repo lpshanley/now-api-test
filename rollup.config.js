@@ -9,8 +9,9 @@ import del from 'del'
 
 const production = !process.env.ROLLUP_WATCH;
 
-const distDir = `.dist`
-const apiDir = `api`
+const distDir = `public`
+const staticDir = `static`
+const functionsDir = `functions`
 
 del.sync(distDir)
 
@@ -46,8 +47,8 @@ export default {
 
 		copy({
 			targets: [
-				{ src: `public/*`, dest: distDir },
-				{ src: `${apiDir}/*`, dest: `${distDir}/api` }
+				{ src: `${staticDir}/*`, dest: distDir },
+				{ src: `${functionsDir}/*`, dest: `${distDir}/api` }
 			]
 		}),
 
