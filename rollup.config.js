@@ -11,6 +11,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 const distDir = `public`
 const staticDir = `static`
+const functionsDir = `functions`
 
 del.sync(distDir)
 
@@ -46,7 +47,8 @@ export default {
 
 		copy({
 			targets: [
-				{ src: `${staticDir}/*`, dest: distDir }
+				{ src: `${staticDir}/*`, dest: distDir },
+				{ src: `${functionsDir}/*`, dest: `${distDir}/api` },
 			]
 		}),
 
