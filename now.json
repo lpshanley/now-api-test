@@ -2,6 +2,12 @@
     "version": 2,
     "name": "now-api-test",
     "builds": [
-        { "src": "package.json", "use": "@now/node" }
+        { 
+            "src": "package.json", 
+            "use": "@now/node", 
+            "config": {
+                "distDir": "public"
+            }
+        }
     ]
 }
