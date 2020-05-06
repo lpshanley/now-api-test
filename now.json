@@ -5,7 +5,6 @@
         { "src": "/api/date", "dest": "/functions/date.js" }
     ],
     "builds": [
-        { "src": "functions/*.js", "use": "@now/node" },
-        { "src": "api/*.js", "use": "@now/node" }
+        { "src": "functions/*.js", "use": "@now/node" }
     ]
 }
