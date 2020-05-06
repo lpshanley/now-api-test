@@ -2,6 +2,10 @@
     "version": 2,
     "name": "now-api-test",
     "routes": [
-        { "src": "/api/date", "dest": "/api/date" }
+        { "src": "/api/date", "dest": "/functions/date.js" }
+    ],
+    "builds": [
+        { "src": "functions/*.js", "use": "@now/node" },
+        { "src": "api/*.js", "use": "@now/node" }
     ]
 }
