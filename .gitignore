@@ -1,5 +1,5 @@
 /node_modules/
 /.now/
 .DS_Store
-/public/
+/public/**/*
 /api/
