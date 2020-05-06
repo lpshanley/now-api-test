@@ -1,23 +1,16 @@
 {
-  "name": "now-api-test",
+  "name": "api-routes",
   "version": "1.0.0",
-  "description": "This repo can be ignored. It is used for testing different situations with deploying to [Now / Vercel](https://vercel.com/)",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "now-build": "node ./scripts/now/build.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lpshanley/now-api-test.git"
-  },
-  "author": "Lucas Shanley <lpshanley@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lpshanley/now-api-test/issues"
-  },
-  "homepage": "https://github.com/lpshanley/now-api-test#readme",
   "dependencies": {
-    "fs-extra": "^9.0.0"
-  }
+    "next": "latest",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "swr": "0.1.18"
+  },
+  "license": "ISC"
 }
