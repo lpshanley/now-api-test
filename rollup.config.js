@@ -14,6 +14,7 @@ const staticDir = `static`
 const functionsDir = `functions`
 
 del.sync(distDir)
+del.sync('api')
 
 export default {
 	input: 'src/main.js',
@@ -48,7 +49,7 @@ export default {
 		copy({
 			targets: [
 				{ src: `${staticDir}/*`, dest: distDir },
-				{ src: `${functionsDir}/*`, dest: `${distDir}/api` }
+				{ src: `${functionsDir}/*`, dest: `api` }
 			]
 		}),
 
